@@ -1,10 +1,10 @@
 body{
 
-	background-image: url('../Images/carbonBackground.jpg');
+	background-image: url('../Images/disaster.png');
 	/*background-repeat:no-repeat;*/
-	background-attachment:scroll;
+	background-attachment:fixed;
 	font-family: 'Play', sans-serif;
-	/*background-size: cover;*/
+	background-size: cover;
 	
 }
 
@@ -12,19 +12,20 @@ body{
 @media only screen and (min-width:90.063em) and (max-width:120.063em) {
 	body{
 
-		background-image: url('../Images/carbonBackground.jpg');
+		background-image: url('../Images/disaster.png');
 		/*background-repeat:no-repeat;*/
-		background-attachment:scroll;
-		/*background-size: cover;*/
+		background-attachment:fixed;
+		background-size: cover;
 	}
 }
 
 /*change background to white if screen size is 1420 or below*/
 @media (max-width: 1420px) {
 	body{
-		background-image: url('../Images/carbonBackground.jpg');
+		background-image: url('../Images/disaster.png');
 		/*background-repeat:no-repeat;*/
-		background-attachment:scroll;
+		background-attachment:fixed;
+		background-size: cover;
 	}
 }
 
@@ -88,6 +89,7 @@ div#aboutme{
 
 	div#title-name{
 		padding-bottom: 2em;
+
 	}
 
 	.title-name{
@@ -162,23 +164,33 @@ div#aboutme{
 	margin-top: -150px;
 	}*/
 
-	div#name{
-		padding: 100px;
-		text-align: center;
+	div#title-name h1{
+		color: #e68a00;
+		font-size:600%;
+		text-align:center;
+		
 	}
 
-	div.school{
-		line-height: .5em;
-	}
 
-	div#overview h1, div#nfc h1, div#android h1, div#network h1, div#hardware h1, div#projects h1{
+	
+	div#overview h1, div#nfc h1, div#android h1, div#network h1, div#hardware h1, div#projects h1, div#fourteen h1, div#thirteen h1{
 		color:white;
+		text-align:center;
+		padding-top:.25rem;
+	}
+
+	div#fourteen h2, div#thirteen h2{
+		color:black;
 		text-align:center;
 		padding-top:.25rem;
 	}
 
 	div#overview li{
 		color:#e68a00;
+	}
+
+	div#fourteen li, div#thirteen li{
+		font-size: 1em;
 	}
 
 	div#hardware p{
