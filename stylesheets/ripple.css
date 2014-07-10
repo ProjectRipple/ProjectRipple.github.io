@@ -8955,7 +8955,7 @@ th.hide-for-touch {
 
 /* Carousel base class */
 .carousel {
-  height: 25em;
+  height: 22em;
   width:100%;
   margin-top: 0px;
   margin-right: auto;
@@ -8977,9 +8977,14 @@ th.hide-for-touch {
 
 }
 
+.carousel-caption p{
+    line-height: 1;
+    font-size: 1em;
+}
+
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  min-height: 25em;
+  min-height: 22em;
   background-color: #777;
   position: center;
 }
@@ -8988,7 +8993,7 @@ th.hide-for-touch {
   padding:0;
   
   min-width: 100%;
-  min-height: 25em;
+  min-height: 22em;
 }
 
 @media (min-width: 60.063em) {
