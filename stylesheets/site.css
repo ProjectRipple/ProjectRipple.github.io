@@ -213,3 +213,6 @@ div#aboutme{
 		line-height: 1.17em;
 		font-weight: normal;
 	}
+	div#title h2{
+		color: #e68a00;
+	}
