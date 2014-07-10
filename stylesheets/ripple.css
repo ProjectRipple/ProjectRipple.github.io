@@ -8972,14 +8972,14 @@ th.hide-for-touch {
   text-align: center;
   background: rgba(0,0,0,.6);
   min-width: 55%;
-  max-height: 45%;
+  max-height: 55%;
   
 
 }
 
 .carousel-caption h1{
-    line-height: 1;
-    font-size: 1.2em;
+    line-height: .2;
+    font-size: 1em;
     padding: none;
     margin:none;
 }
