@@ -8980,6 +8980,8 @@ th.hide-for-touch {
 .carousel-caption h1{
     line-height: 1;
     font-size: 1.2em;
+    padding: none;
+    margin:none;
 }
 .carousel-caption p{
     line-height: .8;
