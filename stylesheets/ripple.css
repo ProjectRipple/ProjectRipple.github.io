@@ -8971,15 +8971,19 @@ th.hide-for-touch {
   position: center;
   text-align: center;
   background: rgba(0,0,0,.6);
-  min-width: 60%;
-  max-height: 65%;
+  min-width: 55%;
+  max-height: 45%;
   
 
 }
 
-.carousel-caption p{
+.carousel-caption h1{
     line-height: 1;
-    font-size: 1em;
+    font-size: 1.2em;
+}
+.carousel-caption p{
+    line-height: .8;
+    font-size: .7em;
 }
 
 /* Declare heights because of positioning of img element */
@@ -9022,6 +9026,16 @@ th.hide-for-touch {
       min-width: 100%;
       min-height: 35;
     }
+.carousel-caption {
+  z-index: 10;
+  position: center;
+  text-align: center;
+  background: rgba(0,0,0,.6);
+  min-width: 60%;
+  max-height: 65%;
+  
+
+}
 }
 
 
