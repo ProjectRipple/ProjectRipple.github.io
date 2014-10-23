@@ -108,16 +108,26 @@
                   <a href="#problem"><strong><h6 style="color:#e68a00;">The Problem</h6></strong></a>
                   <div id="problem" class="content">
                     <h6 style="color:#e68a00;"><em>Here's a scenario...</em></h6>
-                    <h6>A large-scale disaster or mass casualty event has occurred and emergency responders are deployed to rescue and evacuate injured victims. These scenarios currently present many problems. The environment is noisy and chaotic and in order to work as effectively as possible, responders need to efficiently and accurately share information on victims condition. Due to the time critical nature, wound and treatment information must be documented quickly so that it does not delay additional treatments.
-                    
-                    Those with severe wounds will be transported immediately while others are forced to wait. During the patient transfer process a significant number of the patients' vital information is lost or compromised, causing further delay of treatment for those still on the ground.
+                    <h6>A large-scale disaster event has occurred and emergency responders are deployed to rescue and evacuate injured victims. These scenarios currently present many problems. The environment is noisy and chaotic making it difficult for responders need to efficiently and accurately share information on victims condition. Due to the time critical nature, documentation of patient condition and treatments is mishandled and mistakes are made in prioritizing the treatment and transport of patients. 
+                    </h6>
+                    <h6>
+                    Being task saturated, the team on site delays communication with remote teams that are responsible for managing the disposition of additional resources and this degraded situation awareness cascades throughout the care chain, causing transports to be delayed, medical facilities to be ill prepared for the influx of patients.
                     </h6>
                   </div>
                 </dd>
                 <dd>
                   <a href="#solution"><strong><h6 style="color:#e68a00;">The Vision</h6></strong></a>
                   <div id="solution" class="content">
-                    <h6>The design of a Medical Body Area Network (MBAN) incorporates small physiological sensors that monitor the vital conditions of a patient. This data is collected by a single aggregation device and broadcast to a local network spanning the rescue site, an aircraft, or a hospital. The network encompasses all patients in the area, and provides an unparalleled level of situational awareness to on-site responders and off-site consultants. With this enhanced model of communication, Project Ripple seeks to pioneer a paradigm shift in medical telemetry.
+                    <h6>Ripple proposes to improve emergency response through the incorporation of Internet of Things technologies, mobile applications, and technologies designed to improve the situation awareness of highly trained teams.
+                    </h6>
+                    <h6>
+                    Portable, low-cost sensors are needed that communicate wirelessly via open and standardized protocols. Monitoring of these sensors needs to be performed across a mobile adhoc network, enabling all patients to be monitored by any and all responders as needed. The devices need to be quickly deployed and configured and the network cannot rely on bulky infrastructure and computing devices.
+                    </h6>
+                    <h6>
+                    Mobile applications need to facilitate collaboration and patient handoff. When patient information is measured and recorded, it should immediately be available to other members of the team, patient information should not be transmitted verbally over the radio where it can be misinterpreted or recorded incorrectly.
+                    </h6>
+                    <h6>
+                    Patient data should be seamlessly be made available to remote stakeholders over available networks, relieving responders of the need to manually provide this information while trying to care for the injured.
                     </h6>
                   </div>
                 </dd>
@@ -125,14 +135,16 @@
                   <a href="#implementation"><strong><h6 style="color:#e68a00;">The Implementation</h6></strong></a>
                   <div id="implementation" class="content">
                     
-                    <h6>Project Ripple is built upon three main focal points:
+                    <h6>Project Ripple builds technologies in three main categories:
                         <ul class="circle">
-                          <li ><em>Ripple Sense</em></li>
-                            <h6 style="text-indent: 1.5em; margin:none;">Low-power sensors and radios connect to form a network on the human body. These sensors monitor and report patient health data to the broker.</h6>
-                          <li ><em>Ripple Link</em></li>
-                            <h6 style="text-indent: 1.5em; margin:none;">The information broker aggregates sensor data and publishes to subscribed clients. When an internet connection is available, the cloud provides end-clients with geospatial information and other useful data.</h6>
-                          <li ><em>Ripple UI</em></li>
-                            <h6 style="text-indent: 1.5em; margin:none;">Responders will be equipped with Android Tablets to visualize their patients' vital statistics and record their observations. NFC triage tags are implemented to replace the existing triage system. A Google Glass Heads-up Display (HUD) is being developed which will give responders a concise view of patient status without the need to give up their hands to check.</h6>
+                          <li ><em>Sensors</em></li>
+                            <h6 style="text-indent: 1.5em; margin:none;">A low power sensor records multiple vital signs. It uses an 802.15.4 radio to form a 6LoWPAN network . These sensors monitor and report patient health data to the mobile broker.</h6>
+                          <li ><em>Middleware</em></li>
+                            <h6 style="text-indent: 1.5em; margin:none;">Ripple uses lighweight messaging middleware built around MQTT. The system incorporates one broker designed to run on a mobile device and share data amongst a team of responders. This is called the "Cloudlet" and is bridged to another broker that runs remotely. When a data link to the remote broker is inoperable, the cloudlet continues to provide service locally, ensuring that the team of responders is able to maintain situation awareness. When the data link is operable, the data is sent to the remote broker where information from the emergency response can be seamlessly shared with the remote stakeholders.
+                            </h6>
+                          <li ><em>Applications</em></li>
+                            <h6 style="text-indent: 1.5em; margin:none;">Responders will be equipped with Android Tablets to visualize their patients' vital statistics and record their observations. NFC triage tags are implemented to replace the existing triage system. A Google Glass Heads-up Display (HUD) is being developed which will give responders a concise view of patient status without the need to give up their hands to check. Finally, geospatial and web applications are being built to enable other stakeholders to benefit from the information that is being collected at the disaster site.
+                            </h6>
                         </ul>
                     </h6>
                   </div>
